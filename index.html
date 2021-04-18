@@ -1,0 +1,266 @@
+<?php require('header.php'); ?>	
+	<body id="login">
+		<div id="form-login">
+			<div class="form-logo text-center">
+				<a href="#"><img title="Find & Order" src="./assets/img/logo.png"></a>
+			</div>
+
+			<div class="form-wrapper lato-b">
+				<div class="form-header clearfix">
+					<span class="text-uppercase pull-left">Login</span><span class="pull-right fs-12">Vous n'avez pas de compte ? <a class="blue" id="btn-registration" href="#">Inscription</a></span>
+				</div>
+				<div class="form-content">
+					<form  id="user-login" method="post" name="" action="" autocomplete="off">
+						<label for="email" class="text-uppercase">Email <span class="required">*</span></label>
+						<input class="form-control type="text" id="email" name="email" required />
+
+						<label for="password" class="text-uppercase">Password <span class="required">*</span><a id="btn-password" href="#" class="pull-right blue lato-b text-capitalize fs-12">Mot de passe oublié ?</a></label>
+						
+						<input class="form-control type="password" id="password" name="password" required />
+						
+
+						<button type="submit" class="btn btn-info text-uppercase">Connexion</button>
+
+					    <div class="cb-wrapper clearfix">
+						    <input class="pull-left" type="checkbox" value="" id="remember" name="check" checked />
+						    <label for="remember"></label>
+						    <span class="pull-left fs-12">Se souvenir de moi</span>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="form-register">
+			<div style="position:relative;">
+				<div class="form-register-wrapper">
+					<div class="front-card">
+						<div class="form-logo text-center">
+							<a href="#"><img title="Find & Order" src="./assets/img/logo.png"></a>
+						</div>
+
+						<div class="form-wrapper lato-b">
+							<div class="form-header clearfix">
+								<span style="line-height:2em;" class="pull-left text-uppercase text-center">Inscription en tant que commerçant</span><span class="pull-right"><a class="green glyphicon glyphicon-circle-arrow-right loginForm" href="#"></a></span>
+							</div>
+							<div class="form-content">
+								<form id="user-registration" method="post" name="" action="" autocomplete="off">
+									<select id="registerGender" name="gender">
+										<option id="" value="">Monsieur</option>
+										<option id="" value="">Madame</option>
+									</select>
+
+									<input class="form-control" required id="registerSurname" type="text" placeholder="Prénom" value="">
+
+									<input class="form-control" id="registerName" required type="text" placeholder="Nom" value="">
+
+									<div class="inner-addon left-addon">
+									    <span class="glyphicon glyphicon-envelope"></span>
+									    <input id="registerEmail" type="email" placeholder="Email" required class="form-control">
+									</div>
+
+									<div class="inner-addon left-addon">
+									    <span class="glyphicon glyphicon-lock"></span>
+									    <input id="registerPassword" type="password" placeholder="Mot de passe" required class="form-control">
+									</div>
+
+									<div class="cb-wrapper clearfix">
+									    <input class="pull-left" type="checkbox" value="" id="check-condition" name="check" checked />
+									    <label for="check-condition"></label>
+									    <span class="pull-left" style="max-width: 330px;">J'ai lu et j'accepte les <a id="terms-btn" class="green" href="#">conditions générales d'utilisation et de vente</a> de Find&Order.</span>
+								    </div>					
+
+									<button type="submit" class="btn btn-success text-uppercase">C'est parti !</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="back-card">
+						<a id="close-flip" href="#"></a>
+						<ul>
+							<li><a id="cgu" class="active" href="#">CGU</a></li>
+							<li><a id="cgv" href="#">CGV</a></li>
+						</ul>
+						<div id="cgu-content" class="">
+							<div class="scrollbar-inner scrollbar-h">
+								CONDITIONS GÉNÉRALES d'UTILISATION DU SITE INTERNET ET DE L'APPLICATION MOBILE FIND&ORDER<br>
+
+							Le site Internet est accessible depuis l’adresse URL suivante : https://findnorder.com (ci-après, le « Site Internet »). Le Site Internet et son Application Mobile (ci-après, l’« Application Mobile ») sont édités et exploités par la société Find & Order S.A.S au capital de 5 000€ ayant son siège social au 12 rue de l’impératrice Joséphine à Rueil-Malmaison (92 500), immatriculée au registre du commerce et des sociétés de Nanterre sous le numéro 812982 478.<br>
+							Le présent document constitue les conditions générales d’utilisation (« CGU ») des services du Site Internet et de l’Application Mobile « Find & Order » concluent entre la société Find & Order et l’utilisateur, personne physique ou personne morale (« Utilisateur »). <br>
+							Il est fortement recommandé à l’Utilisateur de lire attentivement les CGU car en cliquant sur le bouton « Je certifie avoir plus de 18 ans et avoir lu et accepté les conditions générales d'utilisation (CGU) », l’Utilisateur déclare accepter les CGU. A défaut d’acceptation, l’Utilisateur ne pourra pas accéder aux services proposés par le Site Internet et son Application Mobile.<br>
+
+							Article 1 – Définitions 
+							Espace Prestataire (ou Espace) : désigne l’espace dédié à la présentation du Prestataire, de ses produits et/ou services et l’achat de ses produits et/ou services, son fil d’actualité et les contacts du Prestataire (notamment numéro de téléphone, site web, horaires, adresses) ;<br>
+							Membre(s) : désigne un Utilisateur ou un prestataire identifié sur le Site Internet et/ou l’Application Mobile, personne morale ou personne physique majeure ;<br>
+							Prestataire(s) : désignent les sociétés commerciales, commerçants et artisans indépendants présentant leurs produits et services sur le Site Internet et l’Application Mobile Find & Order ;<br>
+							Service(s) : désigne la prestation opérée par Find & Order depuis le Site Internet et son Application Mobile afin de permettre aux Utilisateurs d’accéder aux services des commerces référencés autour de leur position et de permettre aux commerçants de présenter leurs produits/services ;<br>
+							Société : désigne la société Find & Order
+							Terminal(aux) : désigne l’appareil fixe ou mobile permettant l’accès au service ou à son téléchargement par l’Utilisateur, notamment les terminaux de téléphonie mobile, tablettes numériques et/ou ordinateurs ;
+							Utilisateur(s) : désigne les personnes physiques ou majeures juridiquement capables d’accepter les présentes CGU ;<br>
+
+							ARTICLE 2 - Objet<br>
+							2.1. Les CGU ont pour objet de définir les conditions dans lesquelles Find & Order fournit aux Utilisateurs, via sa plateforme, une prestation gratuite et accessible grâce aux applications informatiques téléchargées gratuitement par les Utilisateurs sur leurs Terminaux.
+							2.2. L’Utilisateur reconnaît expressément se soumettre aux présentes CGU.<br>
+
+							ARTICLE 3 – Description des services proposés aux Utilisateurs
+							3.1 Service de référencement des Prestataires
+							« Find & Order » référence les Prestataires et leur propose un « Espace Prestataire » pour présenter leur commerce (activité), leurs produits et/ou services aux Utilisateurs. L’Utilisateur peut consulter les Espaces Prestataires et recevoir des informations commerciales relatives aux différentes activités des Prestataires.<br>
+
+							3.2 Accès aux services par l’Utilisateur
+							Le Site Internet et son Application Mobile sont accessibles gratuitement à tout Utilisateur disposant d’un accès Internet. L’Utilisateur devra utiliser un terminal compatible, à savoir un smartphone ou une tablette numérique équipé des systèmes d’exploitation Android. L’accès au Site Internet est également possible via un terminal fixe. Tous les coûts afférents à l’accès à la Plateforme incluant les frais de matériels, logiciels ou d’accès Internet sont exclusivement à la charge de l’Utilisateur. La Société n’est pas responsable du bon fonctionnement de l’équipement informatique de l’Utilisateur ainsi que de son accès à Internet.<br>
+							Depuis la page d’accueil de l’Application Mobile, l’Utilisateur dispose de différents outils de recherche des Prestataires, soit par thèmes (alimentation, mode femme, animaux…) ou par mots-clefs. <br>
+							 La recherche du Prestataire est réalisée en fonction du lieu. Si l’Utilisateur ne souhaite pas être géolocalisé, il peut renseigner un autre lieu à partir duquel il souhaite lancer la recherche.<br>
+							L’Utilisateur pourra ajouter un Prestataire dans sa liste de favoris, il sera ainsi informé de son actualité. Il aura la possibilité de le noter et de laisser un commentaire ; étant précisé que la responsabilité de Find & Order ne pourra en aucun cas être engagée.<br>
+
+
+							3.3. Espace Prestataire
+							Chaque Prestataire dispose d’un Espace présentant son commerce (notamment une description de son activité, les horaires d’ouverture), ses produits et/ou services, ses offres et remises et ses actualités. Le Prestataire pourra présenter ses produits et/ services sous la forme d’un catalogue et les classer par rubriques. <br>
+							Cet Espace est exclusivement géré par le Prestataire ; étant précisé que la responsabilité de Find & Order ne pourra en aucun cas être engagée.<br>
+
+							ARTICLE 4 – Inscription de l’Utilisateur
+							4.1. L’inscription sur le Site Internet et son Application Mobile est gratuite pour l’Utilisateur. L’Utilisateur peut consulter le Site Internet, télécharger l’Application Mobile sans s’inscrire formellement via un formulaire. L’Utilisateur ne communiquera ses données personnelles qu’au moment de laisser un commentaire et/ ou une note dans l’espace du commerçant. 
+							4.2 L’Utilisateur a la possibilité d’émettre des commentaires sur les Prestataires. L’Utilisateur s’engage à : (i) respecter les avis des autres Utilisateurs quel que soit leur sexe âge, religion et toute autre caractéristique personnelle, (ii) ne pas publier de communication commerciale et/ou faire du commerce sur le Site Internet, (iii) ne pas télécharger de virus et plus généralement entraver le bon fonctionnement du Site Internet, (iv) ne pas collecter des informations sur les autres Utilisateurs, (v) ne pas inciter à des pratiques contraires à l’ordre public et aux bonnes mœurs.<br>
+
+							ARTICLE 5 – Disponibilité des Services
+							5.1. La Société met en œuvre ses meilleurs efforts pour assurer un accès de qualité à ses Services ; étant précisé que la Société est tenue uniquement par une obligation de moyens.<br>
+							5.2. Pour des raisons de maintenance, d’amélioration, de sécurité des données du Site Internet et de son Application Mobile, la Société peut interrompre, suspendre l’accès des Utilisateurs aux Services. <br>
+							5.3. La responsabilité de la Société ne sera être engagée en cas de pertes de données des Utilisateurs et/ou des Prestataires ou en cas d’interruption des Services quelle qu’en soit la durée.<br>
+							5.4. Si l’Utilisateur ou le Prestataire rencontre des difficultés techniques, il peut utiliser l’adresse Internet suivante support@findnorder.com. 
+
+							ARTICLE 6 –Responsabilité Find & Order S.A.S<br>
+							6.1. La Société agit en qualité d’hébergeur en référençant les Prestataires et en mettant à leur disposition un outil technique d’hébergement. En sa qualité d’intermédiaire technique, la Société n’est pas responsable, à quelque titre que ce soit :<br>
+							- des produits et/ou services des Prestataires, des informations contenues dans les Espaces des Prestataires et de l’activité des Prestataires. 
+							- de la qualité des services ou des produits commercialisés par les Prestataires, qui sont seuls responsables à l’égard des Utilisateurs, notamment du service après-vente et des garanties légales ;
+							-de tout dommage, de toute nature, direct ou indirect, qui pourrait résulter d'une acquisition réalisée auprès d'un Prestataire, qu'il s'agisse d'un produit ou d'un service.<br>
+							6.2. Les informations contenues dans les Espaces Prestataires de l’Application Mobile sont conçues, rédigées, mises en forme et diffusées sous la responsabilité exclusive du Prestataire, étant précisé que la responsabilité de la Société ne peut être engagée en raison du contenu et/ou de la forme desdites informations. <br>
+							6.3. Les photographies et les textes des Prestataires figurant sur l’Espace Prestataire sont fournis par ces derniers et destinés à présenter leurs produits et/ou services ; étant précisé que la responsabilité de la Société ne peut être engagée en raison du contenu des pages et/ou des photographies.
+							6.4. La Société ne peut être tenue responsable de dommages direct ou indirect, quelque soit leur nature, causés par le fait de l’Utilisateur, du Prestataire ou par un tiers.<br>
+							6.5. La Société n'est pas responsable :
+							- des avis laissés par les Utilisateurs sur le Site Internet et son Application Mobile. La Société pourra supprimer tout avis de l’Utilisateur ne respectant pas les engagements ci-dessus et lui verrouiller l’accès à la plateforme ; étant précisé que l’Utilisateur ne pourra prétendre à aucune indemnité ;<br>
+							- des informations erronées ou frauduleuses ayant pour origine l’Utilisateur et/ou le Prestataire ;
+							- du non-respect par l’Utilisateur des présentes CGU ;
+							- des éventuelles difficultés de connexion au Site Internet et/ou à son Application Mobile notamment liées à l’utilisation du réseau Internet, à une intrusion extérieure, à la présence de virus informatique, à l'encombrement du réseau, à des téléchargements, au contenu des liens hypertexte, ou à l'utilisation d'un matériel ou d'une connexion inappropriée.<br>
+							6.6. L’Utilisateur peut signaler à la Société une information erronée ou illicite mise en ligne par un Prestataire. Le signalement se fera via un bouton dans l’application : « Signaler un abus ». Ce signalement doit être accompagné de l'identité complète de l’Utilisateur ainsi qu'une description précise de l'information visée. Un signalement anonyme ne sera pris en compte par la Société. Les Utilisateurs sont informés que la présentation faussement illicite d'une information, en connaissance de cause, expose son auteur aux sanctions pénales.<br>
+
+							ARTICLE 7 – Responsabilité de l’Utilisateur<br>
+							7.1. L’Utilisateur est seul responsable des informations qu’il fournit tant sur l’Application Mobile qu’auprès du Prestataire. Par conséquent, l’Utilisateur garantit la Société contre tout recours et/oudommage ayant pour origines des publications faites par l’Utilisateur, étant précisé que l’Utilisateur devra indemniser la Société.<br>
+							7.2. L’Utilisateur est seul responsable de la gestion de son compte.<br>
+							ARTICLE 8 – Propriété intellectuelle<br>
+							8.1. Les éléments composant le Site Internet et son Application Mobile, qu'ils soient sonores, visibles ou non lors de leur utilisation, sont la propriété exclusive de Find & Order S.A.S ou, selon le cas, des Prestataires et sont protégés par la législation relative à la propriété intellectuelle en vigueur. Toute reproduction, totale ou partielle, des éléments du Site Internet et de son Application Mobile sont strictement interdites, sauf si la Société l’autorise par écrit.<br>
+							8.2. Toute utilisation non-autorisée de ces éléments par quelconque Utilisateur et/ou Prestataire en violation des droits exclusifs de Find & Order S.A.S ou des Prestataires est interdite et constitue une contrefaçon susceptible d'entraîner des poursuites judiciaires.<br>
+							8.3. La marque Find & Order est déposée auprès de l’INPI et est la propriété exclusive de Find & Order SAS. <br>
+							ARTICLE 9 – Confidentialité et protection des données personnelles<br>
+
+							9.1. Les données personnelles communiquées par l’Utilisateur à la Société sont traitées par cette dernière dans le respect de la loi du 6 janvier 1978 dite informatique et libertés ainsi que des recommandations de la Commission Nationale de l’Informatique et des Libertés (CNIL). Elles ont fait l’objet d’une déclaration auprès de la CNIL.<br>
+							9.2. La Société a besoin de la communication par l’Utilisateur des données nominatives pour son identification au moment de laisser un avis et une note sur l’espace du prestataire. Ces données seront utilisées pour la gestion de la Plateforme, pour le comptage des visites dans Espaces des Prestataires. Sous réserve de l’acceptation de l’Utilisateur, la Société peut lui adresser des informations et propositions commerciales émanant des Prestataires. A tout moment, chaque Utilisateur pourra modifier sur cette acceptation en adressant un courrier électronique à Find & Order S.A.S à l’adresse contact@findnorder.com.<br>
+							9.3. L’Utilisateur dispose d’un droit d’accès, de rectification et d’opposition aux données personnelles communiquées à la Société, en adressant sa demande :<br>
+							- par la Plateforme, dans la rubrique « Préférences », de l’Application Mobile ;
+							- par courrier, en indiquant son adresse de courrier électronique, ainsi que ses nom, prénom et adresse postale, à l'adresse suivante : Find & Order, 12 rue de l’impératrice Joséphine à Rueil-Malmaison 92500 ;
+							- par courrier électronique, en indiquant son adresse de courrier électronique, ainsi que ses nom, prénom et adresse postale, à l'adresse suivante: contact@findnorder.com
+							La Société s’engage à supprimer ou modifier les données dans les meilleurs délais.<br>
+							9.4. L’Utilisateur accepte que les données personnelles soient archivées dans les systèmes de la Société dans des conditions raisonnables de sécurité pendant la durée de l’inscription de l’Utilisateur au Site Internet et à son Application Mobile.<br>
+
+							ARTICLE 10 – Liens hypertexte et cookies<br>
+							10.1. Des liens hypertextes vers d’autres sites Internet sont proposés sur l’Application Mobile (par exemple vers le site Internet du Prestataire, des blogs). La Société n’est pas responsable du contenu et de l’accès à ces liens hypertextes.<br>
+							10.2. Il est formellement interdit de mettre en place des liens hypertextes vers le Site Internet et/ou son Application Mobile sans l’accord écrit de la Société.<br>
+							10.3. L’Application Mobile utilisent des cookies portant sur : <br>
+							- les cookies dits d’identifiants des sessions c’est-à-dire capables de mémoriser les informations de connexion.<br>
+							10.4. Dès sa première connexion sur l’Application Mobile, un cookie est généré contenant un token d’authentification propre à l’Utilisateur, il est invité à accepter leur utilisation par l’affichage d’un encadré.<br>
+							10.5. A défaut d’acceptation, l’Utilisateur ne pourra pas accéder aux services proposés par l’Application Mobile.<br>
+
+							ARTICLE 11 – Autres dispositions<br>
+							11.1. La Société se réserve la possibilité de faire évoluer à tout moment le Site Internet et/ou son Application Mobile. A ce titre, la Société se réserve le droit de modifier librement les CGU à tout moment, sans préavis. Toute modification prendra effet immédiatement, dès la mise en ligne de la nouvelle version des CGU, l’Utilisateur sera informé par un bandeau informatif. <br>
+							11.2. La nullité d’un article des présentes CGU n’entraîne pas la nullité des autres articles des CGU. L’article annulé est réputé non écrit.<br>
+
+							ARTICLE 12 – LOI APPLICABLE ET JURIDICTION COMPÉTENTE <br>
+							12.1. En cas de litige relative aux présentes CGU et, plus généralement les rapports entre Find & Order S.A.S et les Utilisateurs, sont soumis au droit français. <br>
+							12.2. Les différends se rapportant à ces relations ou aux CGU seront exclusivement soumis aux juridictions du ressort de la Cour d’appel de Paris.
+							</div>
+						</div>
+
+						<div id="cgv-content" class="" style="display:none;">
+							<div class="scrollbar-inner scrollbar-h">
+								CONDITIONS GENERALES DE VENTE DU SITE INTERNET ET DE l’APPLICATION MOBILE FIND&ORDER 2015<br>
+
+							I. – DOMAINE D'APPLICATION<br>
+
+							Les présentes conditions générales de vente (« CGV ») s'appliquent dans les relations commerciales entre la société Find & Order S.A.S (« Société ») et les prestataires (sociétés commerciales, commerçants et artisans indépendants) vendant leurs produits et/ou services sur l’Application Mobile Find & Order (« Prestataire(s) »).<br>
+							Les présentes CGV ont été mises à la disposition du Prestataire, conformément aux dispositions de l’article L441-6 du Code de Commerce.<br><br>
+							Toute adhésion du Prestataires aux services offerts par la Société (décrits ci-dessous II) implique l’adhésion entière et  sans réserve du Prestataire aux CGV et aux conditions générales d’utilisation, sauf dérogation formelle de la part de la Société.<br>
+							Toute autre condition, clause ou stipulation insérée dans les documents commerciaux du Prestataire, en ce compris ses éventuelles conditions générales d’achat sont considérées comme nulles et non avenues.<br>
+
+							II. – ADHESION<br>
+
+							L’adhésion par le Prestataire aux services offerts par la Société couvre : (i) le référencement des Prestataires sur l’application mobile, (ii) un « Espace Prestataire » (au sens des conditions générales d’utilisation) sur l’application mobile pour présenter leur commerce (activité), leurs produits et/ou services aux utilisateurs, et (iii) la vente de produits et/ou services.
+							Le Prestataire est considéré adhérent à compter de la souscription à l’offre. Le prix de l’abonnement mensuel est de 19 euros H.T, sans engagement à durée indéterminé et renouvelable tacitement. Le Prestataire sera averti de la modification du prix de l’adhésion un mois avant le changement.<br>
+							Le Prestataire bénéficie d’une adhésion gratuite pendant la période du « beta test », en plus des deux mois offerts au lancement officiel de l’application sur le « Playstore » de Google et l’ « Appstore » d’Apple, cette période pourra être prolongée sous acceptation expresse et écrite de la Société.<br>
+
+							Seuls les Prestataires présents sur le territoire Français peuvent souscrire aux services offerts par la Société. <br>
+
+							III. – VENTE DES PRODUITS ET SERVICES PAR LE PRESTATAIRE<br>
+
+							Le Prestataire est seul responsable de la présentation et de la vente des produits et services vendus aux utilisateurs de l’application mobile Find & Order. <br>
+							Le Prestataire s’engage à ce que les produits et/ou services soient conformes aux règles, normes françaises et communautaires applicables en France. 
+							Ils sont garantis contre tout défaut de fabrication dans les conditions légales.<br>
+							Le Prestataire s’engage à ne pas vendre plus chère un produit et/ou un service sur l’application mobile Find & Order. <br>
+
+							IV. – REGLEMENT<br>
+							 
+							Une facture est établie par la Société, le cas échéant au format électronique (pdf) ce qu’accepte expressément le Prestataire, et est envoyé au début de chaque mois payable à la date d’échéance par prélèvement automatique. Pour un prestataire s'inscrivant à la plateforme au  cours du mois précèdent , le premier montant sera calculé au prorata entre la date anniversaire de la souscription et la fin du mois.<br>
+							Tout défaut de paiement à la date fixée entraînera de plein droit : <br>
+							•	l’exigibilité immédiate de toutes les sommes dues, quelque soit le mode de règlement prévu.
+							•	l’exigibilité de pénalités de retard d’un montant égal à trois fois le taux d’intérêt légal et le versement automatique d’une indemnité forfaitaire pour frais de recouvrement d’un montant de quarante (40) euros en application des dispositions du Décret n°2012-1115 du 2 octobre 2012. Tous frais et honoraires relatifs à une quelconque procédure de recouvrement forcé sont à la charge exclusive du Prestataire. A défaut de règlement, la Société pourra adresser une mise en demeure pour recouvrement des sommes dues et/ou suspendre la fourniture des services sans autre préavis.<br>
+
+							V. –  SUSPENSION / RESILIATION<br>
+
+							La Société se réserve le droit de refuser ou de bloquer la vente de produits et/ou de services et l’« Espace du Prestataire » en cas de non-conformité : (i) à la réglementation en vigueur, (ii) à des contraintes techniques liées, et (iii) aux obligations de paiement du Prestataire. <br>
+							Si l’une des parties ne respecte pas les conditions posées par les CGV et/ou les conditions générales d’utilisation, l’autre partie peut la mettre en demeure d’exécuter ses obligations sous un délai de quinze (15) jours ouvrés par lettre recommandée avec accusé de réception. En cas d’inexécution des obligations visées par la lettre de mise en demeure dans le délai indiqué, la résiliation du contrat est de plein droit.<br>
+							Le Prestataire peut interrompre son abonnement à tout moment par lettre recommandé avec demande d’accusé de réception à l’adresse suivante : Find & Order 20 avenue de l’Impératrice Joséphine, 92500 Rueil-Malmaison. <br>
+
+							VI. – RESPONSABILITE<br>
+							 
+							Le Prestataire garantit la Société qu’il détient l’ensemble des agréments et habilitations requis pour vendre des produits et/ou des services sur le site Internet et l’application mobile de Find & Order.<br>
+							Le Prestataire garantit qu’il possède l’intégralité des produits vendus sur l’application mobile de la Société<br>
+							Le Prestataire garantit être couvert par une compagnie d’assurance solvable, couvrant sa responsabilité civile professionnelle ainsi que toute assurance que la loi rend obligatoire pour la résiliation des CGV.<br>
+
+							VII. – PROPRIETE INTELLECTUELLE<br>
+
+							Le Prestataire autorise la Société à reproduire et utiliser les marques, logos, noms commerciaux et tous droits de propriété intellectuelle (« Droits de Propriété Intellectuelle ») pour la promotion du site Internet et de l’application mobile Find & Order ; étant précisé que le Prestataire déclare être titulaire des droits de propriété intellectuelle sur les Droits de Propriété Intellectuelle et garantit disposer des droits lui permettant d’autoriser la Société à reproduire lesdits droits.<br>
+							Le Prestataire garantit également la Société contre toute action, réclamation, revendication ou opposition de la part de toute personne invoquant un droit sur les Droits de Propriété Intellectuelle et s’engage à indemniser la Société, à première demande, de tous dommages, pertes, dépenses et autres frais quelconques résultant de l’inexactitude ou du non-respect par le Prestataire, de l’une quelconque des garanties énoncées au présent article.<br>
+
+							VIII. - JURIDICTION COMPETENTE<br>
+
+							Les CGV sont soumises au droit français.<br>
+							Tous les litiges pouvant survenir à l’occasion de l’interprétation ou de l’exécution des présentes CGV seront de la compétence exclusive des tribunaux de la juridiction de la Cour d’appel de Paris et ce, même en cas de recours en garantie ou pluralité de défendeurs.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="form-password">
+			<div class="form-logo text-center">
+				<a href="#"><img title="Find & Order" src="./assets/img/logo.png"></a>
+			</div>
+
+			<div class="form-wrapper lato-b">
+				<div class="form-header clearfix">
+					<span class="text-uppercase pull-left"><a class="red glyphicon glyphicon-circle-arrow-left loginForm" id="" href="#"></a></span><span style="line-height:2em;display:block;" class="text-center">Mot de passe oublié ?</span>
+				</div>
+				<div class="form-content">
+					<form id="user-password" method="post" name="" action="" autocomplete="off">
+
+						<div class="inner-addon left-addon">
+						    <span class="glyphicon glyphicon-envelope"></span>
+						    <input id="registerEmail" type="email" placeholder="Email" required class="form-control" required>
+						</div>					
+
+						<button type="submit" class="btn btn-danger text-uppercase">Réinitialiser mon mot de passe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="copyright" class="lato-b text-center">&copy; 2016 Dashboard Admin Panel by <a href="#" class="fs16">Find&Order</a></div>
+	<?php require('footer.php'); ?>	

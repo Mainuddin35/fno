@@ -1,0 +1,379 @@
+<?php require('header.php'); ?>	
+	<body id="dashboard" class="tableau-de-bord presentations">
+		<section id="top-pane" class="clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		<section id="dash-wrapper">
+			<div class="row">
+				<aside class="col-lg-2 col-md-2 cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left slidemenu nav-closed">
+					<button class="toggle-menu menu-left push-body jPushMenuBtn btn-info">Menu</button>
+					<nav class="">
+						<div class="nav-header">
+							
+							<!-- <a href="#" class="nav-close"></a> -->
+							<div class="dash-user">
+								<span class="user-photo"></span>
+								<span class="user-name lato">
+									Michael Carvalho<br>
+									<a href="./profile.html" class="text-profile text-uppercase color-333">mon profil</a>
+								</span>
+								<span class="log-out"><a href="#"></a></span>
+							</div>
+							<div class="selector">
+								<select class="fno-select" name="" id="dash-select">
+									<option>Les croissants</option>
+									<option>Dashboard</option>
+									<option>Présentations</option>
+									<option>Evènements</option>
+									<option>Croissants</option>
+								</select>
+							</div>
+						</div>
+
+						<ul class="dash-menu text-uppercase lato">
+							<li class="item-dashborad"><a href="./tableau-de-bord.html"><span></span>Tableau De Bord</a></li>
+							<li class="item-presentation item-selected"><a href="./presentations.html"><span></span>Présentations</a></li>
+							<li class="item-eventment"><a href="./eventments.html"><span></span>évènements</a></li>
+							<li class="item-catalogue"><a href="./catalogue.html"><span></span>catalogue</a></li>
+							<li class="item-info-general"><a href="./info-general.html"><span></span>infos générales</a></li>
+						</ul>
+
+						<div id="copyright" class="lato text-left fs-14">2016 Tous droits réservés<br> Admin Panel by <a href="#" class="fs-14">Find&amp;Order</a></div>
+					</nav>
+				</aside>
+
+				<div class="dash-right col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+							<ul class="breadcrumb">
+								<li><a href="#"><img width="" height="" alt="" src="./assets/img/icons/home.png"></a></li>
+								<li><a class="current" href="#">Présentations</a></li>
+							</ul>
+
+							<h1 class="text-uppercase name-user">bienvenue michael</h1>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<p class="help"><a class="fno-magnific-help" href="#presentation-help">?</a>AIDE</p>
+						</div>
+					</div>
+
+					<div id="stats-header" class="row">
+						<div class="presentation-notification">●  vous n’avez pas posté votre première présentation.</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item stats-item-presentation">
+								<h2 class="stats-h2">24</h2>
+								<span class="text-uppercase stats-sub fs-12">présentations réalisées</span>
+							</div>
+						</div>
+						<!-- 
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item">
+								<span class="stats-h2">1,234</span><br>
+								<span class="text-uppercase stats-sub">visites en boutique</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item">
+								<span class="stats-h2">26 000€</span><br>
+								<span class="text-uppercase stats-sub">ventes cumulées</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item text-right">
+								<a href="#" class="lato-b text-uppercase">ajouter une boutique</a>
+							</div> 
+						</div>
+						-->
+					</div>
+
+					<div class="data-list">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="fno-table-wrapper scrollbar-inner scrollbar-h">
+									<table class="fno-table fno-table-cbox" width="100%" id="boutiques">
+										<thead>
+											<tr>
+												<th class="text-uppercase">présentations</th>
+												<th class="text-right btn-left-ipad">
+													<form method="post" name="boutiques">
+														<input type="text" class="search-input lato" placeholder="Rechercher" id="boutiques-search" name="search">
+														<input type="submit" name="">
+													</form>
+													<a class="aplus-btn pull-right fno-magnific" href="#add-presentation">ajouter une présentations</a>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="first-row">
+												<td class="text-uppercase">
+													<input id="ck-all" class="checkall" type="checkbox" name="checklist" value="">
+													<label for="ck-all"><span></span></label>
+												</td>
+												<td class="text-uppercase">nom</td>
+												<td class="text-uppercase">description</td>
+												<td class="text-uppercase text-center"><img src="./assets/img/icons/france.png" alt="Français" />&nbsp; français </td>
+												<td class="text-uppercase text-center"><img src="./assets/img/icons/gb.png" alt="Anglais" />&nbsp; anglais</td>
+												<td class="text-uppercase text-center"><img src="./assets/img/icons/portugal.png" alt="Portugais" />&nbsp; portugais</td>
+												<td class="text-uppercase text-right ">action</span></td>
+											</tr>
+										</tbody>
+										<tbody style="width:100%;" class=""><!--  scrollbar-inner height:120px;overflow:scroll; -->
+											<tr style="padding:0;">
+												<td colspan="8" style="width:100%;">
+													<div style="" class="table-has-scroll-y scrollbar-inner">
+														<table style="width:100%;">
+															<tbody>
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck1" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck1"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Remise des prix M6</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit" href="#"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck2" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck2"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Inauguration nouvelle boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit" href="#"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck3" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck3"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Installation de la plaque A5</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit" href="#"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck4" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck4"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Présentation de la boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit" href="#"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck5" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck5"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Pot de départ «David»</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit" href="#"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+																<!-- <tr class="even last" style="width:100%;">
+																	<td colspan="7" class="text-uppercase text-center" style="width:100%;">
+																		<a id="noOfItem" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+																	</td>
+																</tr> -->
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr class="last" style="width: 100%;background:#fff;">
+												<td colspan="8" class="text-uppercase text-center" style="width:100%;">
+													<div class="wrap-delete-btn">
+														<a id="noOfItem" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="popup-container">
+			<!-- add a presentation -->
+			<form id="add-presentation" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">ajouter une présentations</h3>
+				<fieldset style="border:0;">
+					<label for="profile-img" class="">Drag & Drop your files<br><span>or</span><br><a class="text-uppercase modify-btn" href="#edit-presentation">modifier</a></label>
+					<input id="profile-img" type="file" />
+
+					<label for="in-history" class="text-uppercase has-margin-t">TITRE <span class="required">*</span></label>
+					<input id="in-history" type="text" name="" value="Notre histoire">
+
+					<label for="in-address" class="text-uppercase has-margin-t">description <span class="required">*</span></label>
+					<input id="in-address" type="text" name="" value="Lorem ipsum dolor si amet consectur esc finitum">
+					<!-- <button class="text-uppercase blue-bg" type="submit">valider</button> -->
+					<a href="#validate-event" class="fno-magnific text-uppercase a-event-validate">valider</a>
+				</fieldset>
+			</form>
+
+			<!-- edit a presentation -->
+			<form id="edit-presentation" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">éditer un produit
+					<!-- <span class="pull-right">
+						<select class="text-uppercase fno-select" id="select-lang">
+							<option value="fr">français </option>
+							<option value="en">anglais</option>
+							<option value="por">portugais</option>
+							<option value="sp">Espagnol</option>
+							<option value="">ajouter une langue</option>
+						</select>
+					</span> -->
+				</h3>
+				<fieldset style="border:0;">
+					<label for="edit-profile-img" class=""><img src="./assets/img/profile-pic.jpg"></label>
+					<input id="edit-profile-img" type="file" />
+					<div class="clearfix uploaded-file">
+						<span class="pull-left file-icon"><img style="vertical-align:top;" src="./assets/img/icons/file.png"> Thif.pdf</span>
+						<a href="" class="pull-right remove-file"><img src="./assets/img/icons/dlt-file.png"></a>
+					</div>
+
+					<label for="in-history" class="text-uppercase has-margin-t">TITRE <span class="required">*</span></label>
+					<input id="in-history" type="text" name="" value="Notre histoire">
+
+					<label for="in-address" class="text-uppercase has-margin-t">description <span class="required">*</span></label>
+					<input id="in-address" type="text" name="" value="Lorem ipsum dolor si amet consectur esc finitum">
+
+					
+					<!-- <button class="text-uppercase blue-bg" type="submit">valider</button> -->
+					<a href="#validate-event" class="fno-magnific text-uppercase a-event-validate">valider</a>
+				</fieldset>
+			</form>
+
+			<!-- form validate -->
+			<form id="validate-event" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">êtes-vous sûr de vouloir supprimer cet élément ?</h3>
+				<fieldset style="border:0;">
+					<button class="text-uppercase blue-bg" type="submit">OUI</button>
+					<button class="text-uppercase" type="submit">NON</button>
+				</fieldset>
+			</form>
+
+			<!-- delete a store -->
+			<form id="delete-shop" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">suppression de la boutique</h3>
+				<fieldset style="border:0;">
+					<p>Êtes-vous sûr de vouloir supprimer cette boutique?</p>
+					<button class="text-uppercase blue-bg" type="submit">OUI</button>
+					<button class="text-uppercase" type="submit">NON</button>
+				</fieldset>
+			</form>
+
+			<!-- help pop-up -->
+			<div id="presentation-help" class="mfp-hide white-popup-block fno-help-popup">
+				<h3 class="fs-12 text-uppercase">aide</h3>
+
+				<div id="presentation-help-slider" class="owl-carousel owl-theme fno-help-slider">
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimez plusieurs présentations</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/p_slide_1.jpg" alt="supprimez plusieurs présentations" />
+						<p class="help-desc text-center fs-14 color-333">Sélectionnez plusieurs éléments puis cliquez sur <span class="orange">supprimer ces 2 élements</span></p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">réordonner une présentation</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/p_slide_2.jpg" alt="supprimez plusieurs présentations" />
+						<p class="help-desc text-center fs-14 color-333" style="max-width:390px;margin:auto;">Vous pouvez classer vos présentations en les maintenant puisen les glissant les unes au dessus des autres</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimer une présentation</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/p_slide_3.jpg" alt="supprimez plusieurs présentations" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez supprimer une présentation depuis le bouton «Corbeille»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">modifier une présentation</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/p_slide_4.jpg" alt="supprimez plusieurs présentations" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez modifier une présentation depuis le bouton «Crayon»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">ajouter une présentation</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/p_slide_5.jpg" alt="supprimez plusieurs présentations" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez ajouter une présentation depuis le bouton «Ajouter»</p>
+					</div>
+				</div>
+			</div>
+		</div>
+<?php require('footer.php'); ?>	

@@ -1,0 +1,1160 @@
+<?php require('header.php'); ?>	
+	<body id="dashboard" class="tableau-de-bord eventments catalogue">
+		<section id="top-pane" class="clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		<section id="dash-wrapper">
+			<div class="row">
+				<aside class="col-lg-2 col-md-2 cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left slidemenu nav-closed">
+					<button class="toggle-menu menu-left push-body jPushMenuBtn btn-info">Menu</button>
+					<nav class="">
+						<div class="nav-header">
+							
+							<!-- <a href="#" class="nav-close"></a> -->
+							<div class="dash-user">
+								<span class="user-photo"></span>
+								<span class="user-name lato">
+									Michael Carvalho<br>
+									<a href="./profile.html" class="text-profile text-uppercase color-333">mon profil</a>
+								</span>
+								<span class="log-out"><a href="#"></a></span>
+							</div>
+							<div class="selector">
+								<select class="fno-select" name="" id="dash-select">
+									<option>Les croissants</option>
+									<option>Dashboard</option>
+									<option>Présentations</option>
+									<option>Evènements</option>
+									<option>Croissants</option>
+								</select>
+							</div>
+						</div>
+
+						<ul class="dash-menu text-uppercase lato">
+							<li class="item-dashborad"><a href="./tableau-de-bord.html"><span></span>Tableau De Bord</a></li>
+							<li class="item-presentation"><a href="./presentations.html"><span></span>Présentations</a></li>
+							<li class="item-eventment"><a href="./eventments.html"><span></span>évènements</a></li>
+							<li class="item-catalogue item-selected"><a href="./catalogue.html"><span></span>catalogue</a></li>
+							<li class="item-info-general"><a href="./info-general.html"><span></span>infos générales</a></li>
+						</ul>
+
+						<div id="copyright" class="lato text-left fs-14">2016 Tous droits réservés<br> Admin Panel by <a href="#" class="fs-14">Find&amp;Order</a></div>
+					</nav>
+				</aside>
+
+				<div class="dash-right col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+							<ul class="breadcrumb">
+								<li><a href="#"><img width="" height="" alt="" src="./assets/img/icons/home.png"></a></li>
+								<li><a class="current" href="#">Catalogue</a></li>
+							</ul>
+
+							<h1 class="text-uppercase name-user">bienvenue michael</h1>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<p class="help"><a class="fno-magnific-help" href="#catalogue-help">?</a>AIDE</p>
+						</div>
+					</div>
+
+					<div id="stats-header" class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item stats-item-catalogue">
+								<h2 class="stats-h2">50</h2>
+								<span class="text-uppercase stats-sub fs-12">produits dans le catalogue</span>
+							</div>
+						</div>
+						<!--
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item">
+								<span class="stats-h2"><span>1 </span>évènement</span>
+								<span class="text-uppercase stats-sub fs-12">débute aujourd’hui à 18h</span>
+							</div>
+						</div>
+						 
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item">
+								<span class="stats-h2">26 000€</span>
+								<span class="text-uppercase stats-sub">ventes cumulées</span>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+							<div class="stats-item text-right">
+								<a href="#" class="lato-b text-uppercase">ajouter une boutique</a>
+							</div>
+						</div>
+						-->
+					</div>
+
+					<div class="data-list">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="fno-table-wrapper scrollbar-inner scrollbar-h">
+									<table class="fno-table" width="100%" id="tb-rubric-tree">
+										<thead>
+											<tr>
+												<th class="text-uppercase">mes rubriques</th>
+												<th class="text-center text-uppercase">
+													<span class="">Sélectionnez une rubrique</span>
+													<span></span>
+													<span>pour y ajouter vos produits.</span>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="last">
+												<td colspan="2" style="width:100%;">
+													<ul class="rubric-tree ul-parent">
+														<li class="active">
+															<a href="#">tout le catalogue</a>
+
+															<ul class="rubric-tree sub-ul ul-level1 expanded">
+																<li class="first-li">
+																	<a href="#"><span class="shop-icon"></span>rub 01</a>
+
+																	<!-- <ul class="rubric-tree sub-ul ul-level2">
+																		<li class="first-li"><a href="#">sous-rubriques 01</a></li>
+																		<li><a href="#">sous-rubriques 02</a></li>
+																		<li class="last-li"><a href="#">sous-rubriques 03</a></li>
+																	</ul> -->
+																</li>
+																<li>
+																	<a href="#">rubrique 02</a>
+
+																	<!-- <ul class="rubric-tree sub-ul ul-level2">
+																		<li class="first-li"><a href="#">sous-rubriques 01</a></li>
+																		<li><a href="#">sous-rubriques 02</a></li>
+																		<li class="last-li"><a href="#">sous-rubriques 03</a></li>
+																	</ul> -->
+																</li>
+																<li><a href="#">rubrique 03</a></li>
+																<li class="active last-li">
+																	<a href="#">Rubrique 04</a>
+
+																	<ul class="rubric-tree sub-ul ul-level2 expanded">
+																		<li class="first-li"><a href="#">sous-rubriques 01</a></li>
+																		<li><a href="#">sous-rubriques 02</a></li>
+																		<li class="active last-li">
+																			<a href="#">sous-rubriques 03</a>
+
+																			<ul class="rubric-tree sub-ul ul-level3 expanded">
+																				<li class="first-li">
+																					<a href="#">sous-sous-rubriques 01</a>
+
+																					<!-- <ul class="rubric-tree sub-ul ul-level4">
+																						<li class="first-li"><a href="#">totor</a></li>
+																						<li><a href="#">hergé magazine</a></li>
+																						<li><a href="#">tintin</a></li>
+																						<li class="last-li"><a href="#">tintin 1</a></li>
+																					</ul> -->
+																				</li>
+																				<li class="last-li active">
+																					<a href="#">sous-sous-rubriques 02</a>
+
+																					<ul class="rubric-tree sub-ul ul-level4 expanded">
+																						<li class="first-li"><a href="#">totor</a></li>
+																						<li><a href="#">hergé magazine</a></li>
+																						<li class="last-li active">
+																							<a href="#"><span class="shop-icon"></span>tintin</a>
+
+																							<ul class="rubric-tree sub-ul ul-level5 expanded">
+																								<li class="first-li active add-li">
+																									<a class="fno-magnific" href="#add-rubrique">ajouter une sous-rubrique</a>
+																								</li>
+																							</ul>
+																						</li>
+																					</ul>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="fno-table-wrapper scrollbar-inner scrollbar-h">
+									<table class="fno-table fno-table-cbox" width="100%" id="boutiques">
+										<thead>
+											<tr>
+												<th class="text-uppercase">TINTIN (20 produits)</th>
+												<th class="text-right btn-left-ipad">
+													<form method="post" name="boutiques">
+														<input type="text" class="search-input lato" placeholder="Rechercher" id="boutiques-search" name="search">
+														<input type="submit" name="">
+													</form>
+													<a class="aplus-btn yellow fno-magnific" href="#edit-rubrique">éditer tintin</a>
+													<a class="aplus-btn orange fno-magnific" href="#delete-rubrique">supprimer tintin</a>
+													<a class="aplus-btn fno-magnific" href="#add-product">ajouter un produit</a>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="first-row row-selectordie">
+												<td class="text-uppercase">
+													<input id="ck-all" class="checkAll" type="checkbox" name="checklist" value="">
+													<label for="ck-all"><span></span></label>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+													</select>
+												</td>
+												<td class="text-uppercase text-center">
+													<select class="fno-select">
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+													</select>
+												</td>
+												<td class="text-uppercase">visibilité</td>
+												<td class="text-uppercase text-center">TVA</td>
+												<td class="text-uppercase text-center"><img src="./assets/img/icons/france.png" alt="Français" />&nbsp; français </td>
+												<td class="text-uppercase text-right ">action</span></td>
+											</tr>
+										</tbody>
+										<tbody style="width:100%;" class=""><!--  scrollbar-inner height:120px;overflow:scroll; -->
+											<tr style="padding:0;">
+												<td colspan="8" style="width:100%;">
+													<div style="" class="table-has-scroll-y scrollbar-inner">
+														<table style="width:100%;">
+															<tbody>
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck1" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck1"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Remise des prix M6</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler enabled">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck2" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck2"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Inauguration nouvelle boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck3" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck3"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Installation de la plaque A5</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler enabled">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck4" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck4"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Présentation de la boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler enabled">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck5" type="checkbox" name="checklist" class="fno-checkbox" value="">
+																		<label for="ck5"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Pot de départ «David»</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler enabled">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+																<!-- <tr class="last even" style="width:100%;">
+																	<td colspan="7" class="text-uppercase text-center" style="width:100%;">
+																		<a id="noOfItem" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+																	</td>
+																</tr> -->
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr class="last" style="width: 100%;background:#fff;">
+												<td colspan="8" class="text-uppercase text-center" style="width:100%;">
+													<a id="noOfItem" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="fno-table-wrapper scrollbar-inner scrollbar-h">
+									<table class="fno-table fno-table-cbox2" width="100%" id="table-rubric">
+										<thead>
+											<tr>
+												<th class="text-uppercase">votre bac à sable (5 produits) permet de rattacher vos produits à une nouvelle rubrique</th>
+												<th class="text-right btn-left-ipad">
+													<form method="post" name="boutiques">
+														<input type="text" class="search-input lato" placeholder="Rechercher" id="boutiques-search" name="search">
+														<input type="submit" name="">
+													</form>
+													<a class="aplus-btn fno-magnific" href="#attribuer-rubrique">attribuer à une rubrique</a>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="first-row row-selectordie">
+												<td class="text-uppercase">
+													<input id="ck-all2" class="check-all" type="checkbox" name="checklist" value="">
+													<label for="ck-all2"><span></span></label>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+														<option value="">Nom</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+														<option value="">description</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+														<option value="">prix TTC</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+														<option value="">promotion</option>
+													</select>
+												</td>
+												<td class="text-uppercase text-center">
+													<select class="fno-select">
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+														<option value="">couleurs</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+														<option value="">tailles</option>
+													</select>
+												</td>
+												<td class="text-uppercase">
+													<select class="fno-select">
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+														<option value="">catégorie</option>
+													</select>
+												</td>
+												<td class="text-uppercase">visibilité</td>
+												<td class="text-uppercase text-center">TVA</td>
+												<td class="text-uppercase text-center"><img src="./assets/img/icons/france.png" alt="Français" />&nbsp; français </td>
+												<td class="text-uppercase text-right ">action</span></td>
+											</tr>
+										</tbody>
+										<tbody style="width:100%;" class=""><!--  scrollbar-inner height:120px;overflow:scroll; -->
+											<tr style="padding:0;">
+												<td colspan="8" style="width:100%;">
+													<div style="" class="table-has-scroll-y scrollbar-inner">
+														<table style="width:100%;">
+															<tbody>
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck6" type="checkbox" name="checkbox" class="check-box" value="">
+																		<label for="ck6"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Remise des prix M6</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck7" type="checkbox" name="checkbox" class="check-box" value="">
+																		<label for="ck7"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Inauguration nouvelle boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck8" type="checkbox" name="checkbox" class="check-box" value="">
+																		<label for="ck8"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Installation de la plaque A5</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		<span class="available"></span>
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<input id="ck9" type="checkbox" name="checkbox" class="check-box" value="">
+																		<label for="ck9"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Présentation de la boutique</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>-25%</td>
+																	<td class="text-center">
+																		<span class="no-color color-333">4</span>
+																		
+																		<ul class="dot-ul">
+																			<li class="dot-black"></li>
+																			<li class="dot-orange"></li>
+																			<li class="dot-blue"></li>
+																			<li class="dot-red"></li>
+																		</ul>
+																	</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<input id="ck10" type="checkbox" name="checkbox" class="check-box" value="">
+																		<label for="ck10"><span></span></label>
+																	</td>
+																	<td>
+																		<span class="commerce-img"></span> <span class="color-333">Pot de départ «David»</span>
+																	</td>
+																	<td class="color-333">Lorem ipsum dolor si amet consectur esc...</td>
+																	<td>12,99€</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																	<td class="text-uppercase">xs,xl</td>
+																	<td class="text-uppercase">Mode femme</td>
+																	<td>
+																		<div class="visibility-wrapper">
+																			<a href="" class="tumbler enabled">&nbsp;</a>
+																		</div>
+																	</td>
+																	<td class="text-center">5,5%</td>
+																	<td class="text-center">
+																		
+																	</td>
+																	<td class="text-uppercase td-action text-right">
+																		<a class="td-edit fno-magnific" href="#edit-product"></a>
+																		<a class="td-delete fno-magnific" href="#delete-shop"></a>
+																	</td>
+																</tr>
+																<!-- <tr class="last even text-center">
+																	<td colspan="7" class="text-uppercase" style="width:100%;">
+																		<a id="noOfItemRT" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+																		<a class="blue" href="#">attribuer à une rubrique</a>
+																	</td>
+																</tr> -->
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr class="last" style="width: 100%;background:#fff;">
+												<td colspan="8" class="text-uppercase text-center" style="width:100%;">
+													<a id="noOfItemRT" style="margin-right: 10px;" class="orange" href="#">supprimer ces <strong>2</strong> élements</a>
+													<a class="blue fno-magnific" href="#attribuer-rubrique">attribuer à une rubrique</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="popup-container">
+			<!-- add a product -->
+			<form id="add-product" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">ajouter un produit</h3>
+				<fieldset style="border:0;">
+					<label for="profile-img" class="">Drag & Drop your files<br><span>or</span><br><a class="text-uppercase modify-btn" href="#edit-product">modifier</a></label>
+					<input id="profile-img" type="file" />
+
+					<div class="clearfix uploaded-file">
+						<span class="pull-left file-icon"><img style="vertical-align:top;" src="./assets/img/icons/file.png"> Thif.pdf</span>
+						<a href="" class="pull-right remove-file"><img src="./assets/img/icons/dlt-file.png"></a>
+					</div>
+
+					<a href="" class="aplus-btn light-grey">ajouter une photo</a>
+
+					<label for="in-history" class="text-uppercase has-margin-t">NOM <span class="required">*</span></label>
+					<input id="in-history" type="text" name="" value="Notre histoire">
+
+					<label for="in-address" class="text-uppercase has-margin-t">description <span class="required">*</span></label>
+					<input id="in-address" type="text" name="" value="Lorem ipsum dolor si amet consectur esc finitum">
+
+					<label for="in-ttc" class="text-uppercase has-margin-t">prix ttc<span class="required">*</span></label>
+					<input id="in-ttc" type="text" name="" value="12,99€">
+
+					<label for="select-category" class="text-uppercase has-margin-t">Catégories<span class="required">*</span></label>
+					<select id="select-category" class="fno-select">
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+					</select>
+
+					<label for="select-promotion" class="text-uppercase has-margin-t">Promotion</label>
+					<select id="select-promotion" class="fno-select">
+						<option selected="">Aucune</option>
+						<option value="">10%</option>
+						<option value="">20%</option>
+						<option value="">30%</option>
+						<option value="">40%</option>
+					</select>
+
+					<div class="date-container">
+						<span class="date-text">Dates</span>
+						<input type="text" name="" value="" class="datepicker-input" />
+						<input type="text" name="" value="" class="datepicker-input" />
+						<a href="#" class="date-close"></a>
+					</div>
+
+					<label for="select-tva" class="text-uppercase has-margin-t">TVA<span class="required">*</span></label>
+					<select id="select-tva" class="fno-select">
+						<option value="">20%</option>
+						<option value="">10%</option>
+						<option value="">5%</option>
+						<option value="">3%</option>
+					</select>
+
+					<div class="color-wrapper" style="display: none;">
+						<label for="select-couleurs" class="text-uppercase has-margin-t">couleurs<span class="required">*</span></label>
+						<!-- <select style="width: 100%;" id="select-couleurs" data-placeholder="Jaune" multiple class="chosen-select">
+							<option value=""></option>
+					        <optgroup label="Jaune">
+					        	<option><span style="color:#ffd800;">●</span> Jaune</option>
+					        	<option><span style="color:#ffe500;">●</span> Jaune pisse</option>
+					        </optgroup>
+					        <optgroup label="Bleu">
+					        	<option><span style="color:#21d8de;">●</span> Bleu</option>
+					        	<option><span style="color:#88dcd3;">●</span> Bleu ciel</option>
+					        	<option><span style="color:#00f7ff;">●</span> Bleu pisse</option>
+					        </optgroup>
+						</select> -->
+						<select id="select-couleurs" class="selectpicker" data-live-search="true" multiple title="Couleurs">
+					        <optgroup label="Jaune">
+					        	<option data-content="<span class='option-color-dot option-jaune'>Jaune</span>">Jaune</option>
+					        	<option data-content="<span class='option-color-dot option-jaune-pisse'>Jaune pisse</span>">Jaune pisse</option>
+					        </optgroup>
+					        <optgroup label="Bleu">
+					        	<option data-content="<span class='option-color-dot option-bleu'>Bleu</span>">Bleu</option>
+					        	<option data-content="<span class='option-color-dot option-bleu-ciel'>Bleu ciel</span>">Bleu ciel</option>
+					        	<option data-content="<span class='option-color-dot option-bleu-pisse'>Bleu pisse</span>">Bleu pisse</option>
+					        </optgroup>
+						</select>
+					</div>
+
+					<div class="size-wrapper" style="display: none;">
+						<label for="select-type-taille" class="text-uppercase has-margin-t">type de taille<span class="required">*</span></label>
+						<select id="select-type-taille" class="fno-select">
+							<option>Tailles américaines</option>
+							<option>Tailles américaines</option>
+							<option>Tailles américaines</option>
+						</select>
+
+
+						<label for="select-taille" class="text-uppercase has-margin-t">tailles<span class="required">*</span></label>
+						<!-- <select style="width: 100%;" id="select-taille" data-placeholder="XL" multiple class="chosen-select">
+							<option value=""></option>
+							<option value="xl">XL</option>
+							<option value="l">L</option>
+							<option value="xxl">XXL</option>
+							<option value="m">M</option>
+							<option value="s">S</option>
+							<option value="xs">XS</option>
+						</select> -->
+						<select style="width: 100%;" id="select-taille" title="XL" multiple class="selectpicker">
+							<option value="xl">XL</option>
+							<option value="l">L</option>
+							<option value="xxl">XXL</option>
+							<option value="m">M</option>
+							<option value="s">S</option>
+							<option value="xs">XS</option>
+						</select>
+					</div>
+
+					<a href="#" class="aplus-btn color-expander">ajouter une couleur</a>
+					<a href="#" class="aplus-btn size-expander">ajouter une taille</a>
+					<button class="text-uppercase blue-bg" type="submit">valider</button>
+				</fieldset>
+			</form>
+
+			<!-- edit a product -->
+			<form id="edit-product" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">éditer un produit
+					<span class="pull-right">
+						<select class="text-uppercase fno-select" id="select-lang">
+							<option value="fr">français </option>
+							<option value="en">anglais</option>
+							<option value="por">portugais</option>
+							<option value="sp">Espagnol</option>
+							<option value="">ajouter une langue</option>
+						</select>
+					</span>
+				</h3>
+				<fieldset style="border:0;">
+					<label for="profile-img" class="">Drag & Drop your files<br><span>or</span><br><a class="text-uppercase modify-btn" href="#edit-product">modifier</a></label>
+					<input id="profile-img" type="file" />
+
+					<div class="clearfix uploaded-file">
+						<span class="pull-left file-icon"><img style="vertical-align:top;" src="./assets/img/icons/file.png"> Thif.pdf</span>
+						<a href="" class="pull-right remove-file"><img src="./assets/img/icons/dlt-file.png"></a>
+					</div>
+
+					<a href="#" class="aplus-btn light-grey">ajouter une photo</a>
+
+					<label for="in-history" class="text-uppercase has-margin-t">NOM <span class="required">*</span></label>
+					<input id="in-history" type="text" name="" value="Notre histoire">
+
+					<label for="in-address" class="text-uppercase has-margin-t">description <span class="required">*</span></label>
+					<input id="in-address" type="text" name="" value="Lorem ipsum dolor si amet consectur esc finitum">
+
+					<label for="in-ttc" class="text-uppercase has-margin-t">prix ttc<span class="required">*</span></label>
+					<input id="in-ttc" type="text" name="" value="12,99€">
+
+					<label for="select-category" class="text-uppercase has-margin-t">Catégories<span class="required">*</span></label>
+					<select id="select-category" class="fno-select">
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+						<option>Mode femme</option>
+					</select>
+
+					<label for="select-promotion" class="text-uppercase has-margin-t">Promotion</label>
+					<select id="select-promotion" class="fno-select">
+						<option selected="">Aucune</option>
+						<option>10%</option>
+						<option>20%</option>
+						<option>30%</option>
+						<option>40%</option>
+					</select>
+
+					<div class="date-container">
+						<span class="date-text">Dates</span>
+						<input type="text" name="" value="" class="datepicker-input" />
+						<input type="text" name="" value="" class="datepicker-input" />
+						<a href="#" class="date-close"></a>
+					</div>
+
+					<label for="select-tva" class="text-uppercase has-margin-t">TVA<span class="required">*</span></label>
+					<select id="select-tva" class="fno-select">
+						<option>20%</option>
+						<option>10%</option>
+						<option>5%</option>
+						<option>3%</option>
+					</select>
+
+					<div class="color-wrapper" style="display: none;">
+						<label for="select-couleurs" class="text-uppercase has-margin-t">couleurs<span class="required">*</span></label>
+						<!-- <select style="width: 100%;" id="select-couleurs" data-placeholder="Jaune" multiple class="chosen-select">
+							<option value=""></option>
+					        <optgroup label="Jaune">
+					          <option><span style="color:#ffd800;">●</span> Jaune</option>
+					          <option><span style="color:#ffe500;">●</span> Jaune pisse</option>
+					        </optgroup>
+					        <optgroup label="Bleu">
+					          <option><span style="color:#21d8de;">●</span> Bleu</option>
+					          <option><span style="color:#88dcd3;">●</span> Bleu ciel</option>
+					          <option><span style="color:#00f7ff;">●</span> Bleu pisse</option>
+					        </optgroup>
+						</select> -->
+						<select id="select-couleurs" class="selectpicker" data-live-search="true" multiple title="Couleurs">
+					        <optgroup label="Jaune">
+					        	<option data-content="<span class='option-color-dot option-jaune'>Jaune</span>">Jaune</option>
+					        	<option data-content="<span class='option-color-dot option-jaune-pisse'>Jaune pisse</span>">Jaune pisse</option>
+					        </optgroup>
+					        <optgroup label="Bleu">
+					        	<option data-content="<span class='option-color-dot option-bleu'>Bleu</span>">Bleu</option>
+					        	<option data-content="<span class='option-color-dot option-bleu-ciel'>Bleu ciel</span>">Bleu ciel</option>
+					        	<option data-content="<span class='option-color-dot option-bleu-pisse'>Bleu pisse</span>">Bleu pisse</option>
+					        </optgroup>
+						</select>
+					</div>
+
+					<div class="size-wrapper" style="display: none;">
+						<label for="select-type-taille" class="text-uppercase has-margin-t">type de taille<span class="required">*</span></label>
+						<select id="select-type-taille" class="fno-select">
+							<option>Tailles américaines</option>
+							<option>Tailles américaines</option>
+							<option>Tailles américaines</option>
+						</select>
+
+
+						<label for="select-taille" class="text-uppercase has-margin-t">tailles<span class="required">*</span></label>
+						<!-- <select style="width: 100%;" id="select-taille" data-placeholder="XL" multiple class="chosen-select">
+							<option value=""></option>
+							<option value="xl">XL</option>
+							<option value="l">L</option>
+							<option value="xxl">XXL</option>
+							<option value="m">M</option>
+							<option value="s">S</option>
+							<option value="xs">XS</option>
+						</select> -->
+						<select style="width: 100%;" id="select-taille" title="XL" multiple class="selectpicker">
+							<option value="xl">XL</option>
+							<option value="l">L</option>
+							<option value="xxl">XXL</option>
+							<option value="m">M</option>
+							<option value="s">S</option>
+							<option value="xs">XS</option>
+						</select>
+					</div>
+
+					<a href="#" class="aplus-btn color-expander">ajouter une couleur</a>
+					<a href="#" class="aplus-btn size-expander">ajouter une taille</a>
+					<button class="text-uppercase blue-bg" type="submit">valider</button>
+				</fieldset>
+			</form>
+
+			<!-- delete a store -->
+			<form id="delete-shop" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">suppression de la boutique</h3>
+				<fieldset style="border:0;">
+					<p>Êtes-vous sûr de vouloir supprimer cette boutique?</p>
+					<button class="text-uppercase blue-bg" type="submit">OUI</button>
+					<button class="text-uppercase" type="submit">NON</button>
+				</fieldset>
+			</form>
+
+			<!-- help pop-up -->
+			<div id="catalogue-help" class="mfp-hide white-popup-block fno-help-popup">
+				<h3 class="fs-12 text-uppercase">aide</h3>
+
+				<div id="catalogue-help-slider" class="owl-carousel owl-theme fno-help-slider">
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimez plusieurs produits du bac à sable</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_1.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Sélectionnez plusieurs éléments puis cliquez sur <span class="orange button-orange">supprimer ces 2 élements</span></p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimez plusieurs produits</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_1.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Sélectionnez plusieurs éléments puis cliquez sur <span class="orange button-orange">supprimer ces 2 élements</span></p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">attribuer une rubrique</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_3.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez attribuer une rubrique à un produit depuis le bouton «Attribuer à une Rubrique»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimer un produit du bac à sable</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_4.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez supprimer une produit du bac à sable depuis le bouton «Corbeille»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">activer/désactiver un produit</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_5.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez <span class="color-ccc">désactiver</span> ou <span class="blue">activer</span> un produit depuis le bouton «Visibilité»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">éditer un produit</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_6.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez édter un produit depuis le bouton «Crayon»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimer un produit</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_7.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez supprimer un produit depuis le bouton «Corbeille»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">ajouter un produit</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_8.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez ajouter un produit depuis le bouton «Ajouter un produit»<br>
+en sélectionnant <span class="blue">une rubrique</span><span class="blue-bag"><img src="assets/img/icons/cart-white.png" alt="blue-bag"></span></p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">éditer une rubrique</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_9.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez éditer une rubrique depuis le bouton «Éditer + nom de votre rubrique»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">supprimer une rubrique</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_10.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez supprimer une rubrique depuis le bouton «Supprimer + nom de votre rubrique»</p>
+					</div>
+					<div class="fno-single-slider">
+						<p class="help-title text-center fs-12 blue lato-b text-uppercase">ajouter une rubrique/sous-rubrique</p>
+						<img class="img-responsive text-center" src="./assets/img/slides/c_slide_11.jpg" alt="" />
+						<p class="help-desc text-center fs-14 color-333">Vous pouvez ajouter une sous-rubrique en sélectionnant la rubrique parente
+et en cliquant sur le bouton «+»</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- add a rubrique -->
+			<form id="add-rubrique" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">ajouter une rubrique</h3>
+				<fieldset style="border:0;">
+					<label for="rubrique" class="text-uppercase">nom de la rubrique<span class="required">*</span></label>
+					<input id="rubrique" type="text" name="rubrique" value="LOREM">
+
+					<button class="text-uppercase blue-bg" type="submit">ajouter</button>
+				</fieldset>
+			</form>
+
+			<!-- edit a rubrique -->
+			<form id="edit-rubrique" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">éditer une rubrique
+					<span class="pull-right">
+						<select class="text-uppercase fno-select" id="select-lang">
+							<option value="fr">français </option>
+							<option value="en">anglais</option>
+							<option value="por">portugais</option>
+							<option value="sp">Espagnol</option>
+							<option value="">ajouter une langue</option>
+						</select>
+					</span>
+				</h3>
+				<fieldset style="border:0;">
+					<label for="edit-rubrique-input" class="text-uppercase">nom de la rubrique<span class="required">*</span></label>
+					<input id="edit-rubrique-input" type="text" name="rubrique" value="LOREM">
+
+					<button class="text-uppercase blue-bg" type="submit">confirmer</button>
+				</fieldset>
+			</form>
+
+			<!-- delete a rubrique -->
+			<form id="delete-rubrique" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">Êtes-vous sûr de vouloir supprimer cet élément?</h3>
+				<fieldset style="border:0;">
+					<button class="text-uppercase blue-bg fs-12" type="submit">OUI</button>
+					<button class="text-uppercase fs-12" type="submit">NON</button>
+				</fieldset>
+			</form>
+
+			<!-- attribuer à une rubrique -->
+			<form id="attribuer-rubrique" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">attribuer à une rubrique</h3>
+				<fieldset style="border:0;">
+					<label for="select-topics" class="text-uppercase">nom de la rubrique<span class="required">*</span></label>
+					<select id="select-topics" class="selectpicker" title="Rubrique">
+			        	<option data-content="<img src='./assets/img/icons/france.png' /> Français">Français</option>
+			        	<option data-content="<img src='./assets/img/icons/gb.png' />Inglés"> Inglés</option>
+			        	<option data-content="<img src='./assets/img/icons/portugal.png' /> Portugais">Portugais</option>
+			        	<option data-content="<img src='./assets/img/icons/spain.png' /> Espanol">Espanol</option>
+					</select>
+
+					<button class="text-uppercase blue-bg" type="submit">valider</button>
+				</fieldset>
+			</form>
+		</div>
+		<?php require('footer.php'); ?>	

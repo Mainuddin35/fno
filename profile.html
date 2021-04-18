@@ -1,0 +1,139 @@
+<?php require('header.php'); ?>	
+	<body id="dashboard" class="tableau-de-bord presentations">
+		<section id="top-pane" class="clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		<section id="dash-wrapper">
+			<div class="row">
+				<aside class="col-lg-2 col-md-2 cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left slidemenu nav-closed">
+					<button class="toggle-menu menu-left push-body jPushMenuBtn btn-info">Menu</button>
+					<nav class="">
+						<div class="nav-header">
+							
+							<!-- <a href="#" class="nav-close"></a> -->
+							<div class="dash-user">
+								<span class="user-photo"></span>
+								<span class="user-name lato">
+									Michael Carvalho<br>
+									<a href="./profile.html" class="text-profile text-uppercase color-333">mon profil</a>
+								</span>
+								<span class="log-out"><a href="#"></a></span>
+							</div>
+							<div class="selector">
+								<select class="fno-select" name="" id="dash-select">
+									<option>Les croissants</option>
+									<option>Dashboard</option>
+									<option>Présentations</option>
+									<option>Evènements</option>
+									<option>Croissants</option>
+								</select>
+							</div>
+						</div>
+
+						<ul class="dash-menu text-uppercase lato">
+							<li class="item-dashborad"><a href="./tableau-de-bord.html"><span></span>Tableau De Bord</a></li>
+							<li class="item-presentation"><a href="./presentations.html"><span></span>Présentations</a></li>
+							<li class="item-eventment"><a href="./eventments.html"><span></span>évènements</a></li>
+							<li class="item-catalogue"><a href="./catalogue.html"><span></span>catalogue</a></li>
+							<li class="item-info-general"><a href="./info-general.html"><span></span>infos générales</a></li>
+						</ul>
+
+						<div id="copyright" class="lato text-left fs-14">2016 Tous droits réservés<br> Admin Panel by <a href="#" class="fs-14">Find&amp;Order</a></div>
+					</nav>
+				</aside>
+
+				<div class="dash-right col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+							<ul class="breadcrumb">
+								<li><a href="#"><img width="" height="" alt="" src="./assets/img/icons/home.png"></a></li>
+								<li><a class="current" href="#">Mon profil</a></li>
+							</ul>
+
+							<h1 class="text-uppercase name-user">bienvenue michael</h1>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<!-- <p class="help"><a class="fno-magnific-help" href="#presentation-help">?</a>AIDE</p> -->
+						</div>
+					</div>
+
+					<div class="data-list">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<form name="" action="" id="form-profile">
+									<div class="form-ig-row clearfix margin-none">
+										<label for="" class="text-uppercase fs-10 lato-b">photo de profil</label>
+									</div>
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<div class="photo-wrapper">
+												<img src="./assets/img/photo.png" alt="">
+												<a href="#" class="photo-close"></a>
+
+												<a href="#" class="aplus-btn fs-12 text-uppercase btn-nplus">envoyer</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<label for="" class="text-uppercase fs-10 lato-b">prénom</label>
+											<input class="lato fs-12" type="text" name="" value="David" >
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<label for="" class="text-uppercase fs-10 lato-b">Nom</label>
+											<input class="lato fs-12" type="text" name="" value="Jeanot" >
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<label for="" class="text-uppercase fs-10 lato-b">changer le mot de passe</label>
+											<input class="lato fs-12" type="password" name="" value="password" >
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<label for="" class="text-uppercase fs-10 lato-b">confirmer le mot de passe</label>
+											<input class="lato fs-12" type="password" name="" value="password" >
+
+											<a href="#" class="aplus-btn fs-12 text-uppercase btn-nplus margin-none">valider</a>
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col">
+											<a href="#unsubscribe" class="aplus-btn fs-12 text-uppercase btn-nplus orange-bg fno-magnific">me désinscrire</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="">
+			<!-- unsubscribe -->
+			<form id="unsubscribe" class="mfp-hide white-popup-block fno-pop-form">
+				<h3 class="fs-12 text-uppercase">désinscription</h3>
+				<fieldset style="border:0;">
+					<p class="text-center fs-12">Voulez-vous vraiment vous désinscrire ?<br>Cette action supprimera vos boutiques et produits.</p>
+					<label class="text-uppercase has-margin-t fs-10" for="">mot de passe <span class="required">*</span></label>
+					<input name="" type="password" value="password">
+					<a href="#" class="aplus-btn fs-12 text-uppercase btn-nplus orange-bg">me désinscrire</a>
+				</fieldset>
+			</form>
+		</div>
+
+<?php require('footer.php'); ?>	

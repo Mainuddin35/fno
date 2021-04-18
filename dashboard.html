@@ -1,0 +1,392 @@
+<?php require('header.php'); ?>	
+	<body id="dashboard">
+		<section id="top-pane" class="clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		<section id="dash-wrapper" class="">
+			<div class="row">
+				<aside class="col-lg-2 col-md-2 cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left slidemenu nav-closed">
+					<button class="toggle-menu menu-left push-body jPushMenuBtn btn-info">Menu</button>
+					<nav class="">
+						<div class="nav-header">
+							
+							<!-- <a href="#" class="nav-close"></a> -->
+							<div class="dash-user">
+								<span class="user-photo"></span>
+								<span class="user-name lato">
+									Michael Carvalho<br>
+									<span class="text-profile text-uppercase color-333">mon profil</span>
+								</span>
+								<span class="log-out"><a href="#"></a></span>
+							</div>
+							<div class="selector">
+								<select class="fno-select" name="" id="dash-select">
+									<option>Les croissants</option>
+									<option>Dashboard</option>
+									<option>Présentations</option>
+									<option>Evènements</option>
+									<option>Croissants</option>
+								</select>
+							</div>
+						</div>
+
+						<ul class="dash-menu text-uppercase lato">
+							<li class="item-dashborad"><a href="#"><span></span>Dashboard</a></li>
+							<li class="item-presentation"><a href="#"><span></span>Présentations</a></li>
+							<li class="item-eventment"><a href="#"><span></span>évènements</a></li>
+							<li class="item-catalogue"><a href="#"><span></span>catalogue</a></li>
+							<li class="item-info-general"><a href="#"><span></span>infos générales</a></li>
+							<li class="item-setting"><a href="#"><span></span>réglages</a></li>
+							<li class="item-statistics"><a href="#"><span></span>statistiques</a></li>
+						</ul>
+
+						<div id="copyright" class="lato text-left fs-14">2016 Tous droits réservés<br> Admin Panel by <a href="#" class="fs-14">Find&amp;Order</a></div>
+					</nav>
+				</aside>
+
+				<div class="dash-right col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<ul class="breadcrumb">
+						<li><a href="#"><img width="" height="" alt="" src="./assets/img/icons/home.png"></a></li>
+						<li><a href="#">Admin Panel</a></li>
+						<li><a class="current" href="#">Tableau de bord</a></li>
+					</ul>
+
+					<h1 class="text-uppercase">tableau de bord</h1>
+					<h3>Bienvenue, Michael</h3>
+
+					<div id="stats-header" class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item stats-item-articles">
+								<h2 class="stats-h2">256 020</h2>
+								<span class="text-uppercase stats-sub fs-12">articles vendus</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item stats-item-visit">
+								<h2 class="stats-h2">1,234</h2>
+								<span class="text-uppercase stats-sub fs-12">visites cumulées</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item stats-item-sales">
+								<h2 class="stats-h2">26 000€</h2>
+								<span class="text-uppercase stats-sub fs-12">ventes cumulées</span>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="stats-item text-right stats-item-shop">
+								<a href="#" class="lato-b text-uppercase fs-12">ajouter une boutique</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="data-list">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="fno-table-wrapper scrollbar-inner scrollbar-h">
+									<table class="fno-table" width="100%" id="boutiques">
+										<thead>
+											<tr>
+												<th class="text-uppercase">Boutiques</th>
+												<th class="text-right">
+													<form method="post" name="boutiques">
+														<input type="text" class="search-input lato" placeholder="Rechercher" id="boutiques-search" name="search">
+														<input type="submit" name="">
+													</form>
+
+													<select class="fno-select" name="filters">
+														<option>Filtres</option>
+													</select>
+
+													<a href="#"><img src="./assets/img/icons/continue.png"></a>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="first-row">
+												<td class="text-uppercase">commerce</td>
+												<td class="text-uppercase">adresse</td>
+												<td class="text-uppercase">État</td>
+												<td class="text-uppercase">kbis</td>
+												<td class="text-uppercase">carte d’identité</td>
+												<td class="text-uppercase">langues</td>
+												<td class="text-uppercase text-center">action</td>
+											</tr>
+										</tbody>
+										<tbody style="width:100%;" class=""><!--  scrollbar-inner height:120px;overflow:scroll; -->
+											<tr style="padding:0;">
+												<td colspan="8" style="width:100%;">
+													<div style="" class="table-has-scroll-y scrollbar-inner">
+														<table style="width:100%;">
+															<tbody>
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="actif span-bg">ACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="actif span-bg">ACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="inactif span-bg">INACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																		<span class="color-333">PT</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+
+																<tr class="even">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="inactif span-bg">INACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																		<span class="color-333">PT</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+
+																<tr class="odd">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="inactif span-bg">INACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																		<span class="color-333">PT</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+																<tr class="even last">
+																	<td class="text-uppercase">
+																		<span class="commerce-img"></span> <span class="color-333">Boulangerie « Les croissants »</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="color-333">20 rue du paradis, 75012 PARIS</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="inactif span-bg">INACTIF</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase">
+																		<span class="voir span-bg">VOIR</span>
+																	</td>
+																	<td class="text-uppercase color-333 td-lang">
+																		<span class="color-333">FR</span> 
+																		<span class="color-333">EN</span>
+																		<span class="color-333">PT</span>
+																	</td>
+																	<td class="text-uppercase td-action text-center">
+																		<a class="td-setting" href="#"></a>
+																		<a class="td-delete" href="#"></a>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div id="stats-content" class="row">
+							<div class="col-lg-3 col-md-3 col-sm-6">
+								<table class="fno-table tbody-has-padding" width="100%" id="catalogue">
+									<thead>
+										<tr>
+											<th width="100%" class="text-uppercase">catalogue <a class="pull-right" href="#"><img src="./assets/img/icons/continue.png"></a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="color-333">Pains au chocolat</span></td>
+											<td><span class="blue">325</span></td>
+											<td class="text-right"><span class="color-333">2,50€</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Pains au chocolat</span></td>
+											<td><span class="blue">235</span></td>
+											<td class="text-right"><span class="color-333">2,50€</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Pains au chocolat</span></td>
+											<td><span class="blue">250</span></td>
+											<td class="text-right"><span class="color-333">2,50€</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Pains au chocolat</span></td>
+											<td><span class="blue">190</span></td>
+											<td class="text-right"><span class="color-333">2,50€</span></td>
+										</tr>
+										<tr class="last">
+											<td colspan="3" style="width:100%;">
+												<a class="text-uppercase text-center" href="#">voir tout</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6">
+								<table class="fno-table tbody-has-padding" width="100%" id="statistiques">
+									<thead>
+										<tr>
+											<th width="100%" class="text-uppercase">statistiques <a class="pull-right" href="#"><img src="./assets/img/icons/continue.png"></a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="last">
+											<td class="stats-circle">
+												<div class="sc-center text-center">
+													<strong style="font-size:16px;color:#333333;">689€</strong>
+													<span style="font-size:12px;color:#cccccc;">TOTAL</span>
+												</div>
+												<span class="sc-left-top">Viennoiseries</span>
+												<span class="sc-right-top">Patisseries</span>
+												<span class="sc-left-bottom">Boulangerie</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6">
+								<table class="fno-table tbody-has-padding" width="100%" id="presentation">
+									<thead>
+										<tr>
+											<th width="100%" class="text-uppercase">PRéSENTATIONs <a class="pull-right" href="#"><img src="./assets/img/icons/continue.png"></a></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="color-333">Mes récompenses</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Presse</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Pains au chocolat</span></td>
+										</tr>
+										<tr>
+											<td><span class="color-333">Notre histoire</span></td>
+										</tr>
+										<tr class="last">
+											<td colspan="3" style="width:100%;">
+												<a class="text-uppercase text-center" href="#">voir tout</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="calander" class="col-lg-3 col-md-3 col-sm-6">
+								<div class="datepicker"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<?php require('footer.php'); ?>	

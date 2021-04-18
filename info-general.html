@@ -1,0 +1,371 @@
+<?php require('header.php'); ?>	
+	<body id="dashboard" class="tableau-de-bord presentations">
+		<section id="top-pane" class="clearfix">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+
+		<section id="dash-wrapper">
+			<div class="row">
+				<aside class="col-lg-2 col-md-2 cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left slidemenu nav-closed">
+					<button class="toggle-menu menu-left push-body jPushMenuBtn btn-info">Menu</button>
+					<nav class="">
+						<div class="nav-header">
+							
+							<!-- <a href="#" class="nav-close"></a> -->
+							<div class="dash-user">
+								<span class="user-photo"></span>
+								<span class="user-name lato">
+									Michael Carvalho<br>
+									<a href="./profile.html" class="text-profile text-uppercase color-333">mon profil</a>
+								</span>
+								<span class="log-out"><a href="#"></a></span>
+							</div>
+							<div class="selector">
+								<select class="fno-select" name="" id="dash-select">
+									<option>Les croissants</option>
+									<option>Dashboard</option>
+									<option>Présentations</option>
+									<option>Evènements</option>
+									<option>Croissants</option>
+								</select>
+							</div>
+						</div>
+
+						<ul class="dash-menu text-uppercase lato">
+							<li class="item-dashborad"><a href="./tableau-de-bord.html"><span></span>Tableau De Bord</a></li>
+							<li class="item-presentation"><a href="./presentations.html"><span></span>Présentations</a></li>
+							<li class="item-eventment"><a href="./eventments.html"><span></span>évènements</a></li>
+							<li class="item-catalogue"><a href="./catalogue.html"><span></span>catalogue</a></li>
+							<li class="item-info-general item-selected"><a href="./info-general.html"><span></span>infos générales</a></li>
+						</ul>
+
+						<div id="copyright" class="lato text-left fs-14">2016 Tous droits réservés<br> Admin Panel by <a href="#" class="fs-14">Find&amp;Order</a></div>
+					</nav>
+				</aside>
+
+				<div class="dash-right col-lg-10 col-md-10 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+							<ul class="breadcrumb">
+								<li><a href="#"><img width="" height="" alt="" src="./assets/img/icons/home.png"></a></li>
+								<li><a class="current" href="#">Infos générales</a></li>
+							</ul>
+
+							<h1 class="text-uppercase name-user">bienvenue michael</h1>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+							<!-- <p class="help"><a class="fno-magnific-help" href="#presentation-help">?</a>AIDE</p> -->
+						</div>
+					</div>
+
+					<div id="stats-header" class="row">
+						<div class="presentation-notification text-uppercase">●  ajoutez votre kbis</div>
+					</div>
+
+					<div class="data-list">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<form name="" action="" id="form-info-general">
+									<div class="form-ig-row clearfix margin-none">
+										<label for="" class="text-uppercase fs-10 lato-b">type de boutique <span class="required">*</span></label>
+									</div>
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<select style="width: 100%;" id="select-alimentation" data-placeholder="Alimentation" class="info-chosen-select">
+										        <optgroup label="Alimentation">
+										        	<option value=""></option>
+										        	<option value="">Charcutier</option>
+										        	<option value="">Boulanger</option>
+										        </optgroup>
+											</select>
+
+											<a href="#" id="btn-select-expand" class="aplus-btn fs-12 light-grey lato-b">ajouter un type de boutique</a>
+
+											<select style="width: 100%;" id="select-category" data-placeholder="+ajouter un type de boutique" class="fs-12 lato-b">
+												<option value=""></option>
+										        <optgroup label="Catégorie 01">
+										        	<option value="">Sub Catégorie</option>
+										        </optgroup>
+										        <optgroup label="Catégorie 02">
+										        	<option value="">Charcutier</option>
+										        	<option value="">Boulanger</option>
+										        </optgroup>
+										        <optgroup label="Catégorie 03">
+										        	<option value="">Sub Catégorie</option>
+										        </optgroup>
+											</select>
+										</div>
+
+										<div class="form-ig-col ig-col-2nd">
+											<select style="width: 100%;" id="select-sante" data-placeholder="Santé" class="info-chosen-select">
+										        <optgroup label="Santé">
+										        	<option value=""></option>
+										        	<option value="">Pharmacie</option>
+										        </optgroup>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<label for="" class="text-uppercase fs-10 lato-b">e-mail de la boutique</label>
+											<input class="lato fs-12" type="text" name="" value="boutique@boutique.fr" >
+										</div>
+
+										<div class="form-ig-col ig-col-2nd">
+											<label for="" class="text-uppercase fs-10 lato-b">adresse de la boutique</label>
+											<input class="lato fs-12" type="text" name="" value="24 test rue du test" >
+										</div>
+										<div class="form-ig-col ig-col-3rd">
+											<div class="map-area"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5276.824727960692!2d2.3538947565476653!3d48.85609395214028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C+France!5e0!3m2!1sen!2s!4v1473619662160" width="100%" height="170" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<label for="" class="text-uppercase fs-10 lato-b">numéro de téléphone <span class="required">*</span></label>
+											<input class="lato fs-12" type="text" name="" value="0606060606" >
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<label for="" class="text-uppercase fs-10 lato-b">page facebook</label>
+											<input class="lato fs-12" type="text" name="" value="test" >
+										</div>
+
+										<div class="form-ig-col ig-col-2nd">
+											<label for="" class="text-uppercase fs-10 lato-b">fil twitter</label>
+											<input class="lato fs-12" type="text" name="" value="test" >
+										</div>
+										<div class="form-ig-col ig-col-3rd">
+											<label for="" class="text-uppercase fs-10 lato-b">site web</label>
+											<input class="lato fs-12" type="text" name="" value="test" >
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix margin-none">
+										<label for="" class="text-uppercase fs-10 lato-b">horaires <span class="required">*</span></label>
+									</div>
+									<div class="form-ig-row clearfix row-schedule-list">
+										<div class="form-ig-col ig-col-1st">
+											<label for="" class="text-uppercase fs-12 lato-b blue">lundi</label>
+
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+											
+											<a href="#" class="aplus-btn fs-12 light-grey add-schedule">ajouter une plage horaire</a>
+											<a href="#" class="aplus-btn fs-12 light-grey btn-nplus">fermé ?</a>
+										</div>
+
+										<div class="form-ig-col ig-col-2nd">
+											<label for="" class="text-uppercase fs-12 lato-b blue">mardi</label>
+											
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+
+											<a href="#" class="aplus-btn fs-12 light-grey add-schedule">ajouter une plage horaire</a>
+											<a href="#" class="aplus-btn fs-12 light-grey btn-nplus">fermé ?</a>
+										</div>
+										<div class="form-ig-col ig-col-3rd">
+											<label for="" class="text-uppercase fs-12 lato-b blue">mercredi</label>
+											
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+
+											<a href="#" class="aplus-btn fs-12 btn-nplus">fermé ?</a>
+										</div>
+									<!-- </div>
+									<div class="form-ig-row clearfix"> -->
+										<div class="form-ig-col ig-col-4th">
+											<label for="" class="text-uppercase fs-12 lato-b blue">jeudi</label>
+											
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+
+											<a href="#" class="aplus-btn fs-12 light-grey add-schedule">ajouter une plage horaire</a>
+											<a href="#" class="aplus-btn fs-12 light-grey btn-nplus">fermé ?</a>
+										</div>
+
+										<div class="form-ig-col ig-col-5th">
+											<label for="" class="text-uppercase fs-12 lato-b blue">vendredi</label>
+											
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+
+											<a href="#" class="aplus-btn fs-12 light-grey add-schedule">ajouter une plage horaire</a>
+											<a href="#" class="aplus-btn fs-12 light-grey btn-nplus">fermé ?</a>
+										</div>
+										<div class="form-ig-col ig-col-6th">
+											<label for="" class="text-uppercase fs-12 lato-b blue">samedi</label>
+											
+											<div class="schedule">
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+
+												<div class="schedule-single">
+													<div class="schedule-row clearfix">
+														<input type="text" name="" value="10:30" class="schedule-input schedule-start">
+														<span class="seperator">|</span>
+														<input type="text" name="" value="16:00" class="schedule-input schedule-end">
+													</div>
+													<a href="#" class="schedule-close"></a>
+												</div>
+											</div>
+
+											<a href="#" class="aplus-btn fs-12 btn-nplus">fermé ?</a>
+										</div>
+									</div>
+
+									<div class="form-ig-row clearfix margin-none">
+										<label for="" class="text-uppercase fs-10 lato-b">devanture de la boutique</label>
+									</div>
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<div class="photo-wrapper">
+												<img src="./assets/img/photo.png" alt="">
+												<a href="#" class="photo-close"></a>
+											</div>
+											<!-- <a href="#" class="aplus-btn fs-12 text-uppercase btn-nplus">ajouter une photo</a>
+ -->
+										</div>
+
+										<div class="form-ig-col ig-col-2nd">
+											<div class="photo-wrapper">
+												<img src="./assets/img/photo.png" alt="">
+												<a href="#" class="photo-close"></a>
+											</div>
+										</div>
+										<div class="form-ig-col ig-col-3rd">
+											<div class="photo-wrapper">
+												<img src="./assets/img/photo.png" alt="">
+												<a href="#" class="photo-close"></a>
+											</div>
+										</div>
+									</div>
+									<div class="form-ig-row clearfix">
+										<div class="form-ig-col ig-col-1st">
+											<label class="imgup-label fs-12 text-uppercase lato-b" for="imgup-add-photo">ajouter une photo</label>
+											<input id="imgup-add-photo" type="file">
+										</div>
+									</div>
+									<div class="form-ig-row clearfix">
+										<label for="" class="text-uppercase fs-10 lato-b">pièces justificatives <span class="required">*</span></label>
+										<div class="form-ig-col voucher-section">
+											<!-- 
+											<a href="#" class="aplus-btn fs-12 text-uppercase">ajouter une pièce d’identité</a>
+											<a href="#" class="aplus-btn fs-12 text-uppercase">ajouter un kbis</a>
+											-->
+											<label class="imgup-label fs-12 text-uppercase lato-b" for="imgup-id">ajouter une pièce d’identité</label>
+											<input id="imgup-id" type="file">
+
+											<label class="imgup-label fs-12 text-uppercase lato-b" for="imgup-add-id">ajouter une pièce d’identité</label>
+											<input id="imgup-add-id" type="file">
+
+											<a href="#" class="aplus-btn fs-12 text-uppercase btn-nplus btn-envoyer">envoyer</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<?php require('footer.php'); ?>	
